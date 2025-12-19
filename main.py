@@ -16,7 +16,7 @@ app = FastAPI(title="Auth Service")
 # CORS (VERY IMPORTANT)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://libinrahman.cloud"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
